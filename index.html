@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset='utf-8'>
+    <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Random Number Generator</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Secular+One">
 </head>
-<body>
+<body id="box">
 
-    <div>
-        <p>Enter a range of numbers:</p>
-        <p>From</p>
-        <input type="text" id="n1"/>
-        <p>to</p>
-        <input type="text" id="n2"/>
-    </div>
+    <form>
+        <p id="enter">Enter a range of numbers</p>
+        <p id="from">From:</p>
+        <input type="text" name="name" class="question" id="n1" required autocomplete="off" value="1" />
+        <p id="to">To:</p>
+        <input type="text" name="name" class="question" id="n2" required autocomplete="off" value="10" />
+    </form>
 
-
-    <p id="number"></p>
-    <button id="btn-generate">Generate</button>
+    <span id="btn-generate"><a href="#"></a></span>
+	<h1 id="number"></h1>
     <script src="js/app.js"></script>
+	
+	
+	<a class="made-by" href="https://www.instagram.com/vittorio.barbera/">Made by Vittorio Barbera.</a>
 
 </body>
 </html>
